@@ -1,0 +1,23 @@
+{
+  "name": "cloud",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ins": "npm-run-all --serial install:*",
+    "ins:main": "cd cloud-main-static && npm install",
+    "ins:storge": "cd cloud-storge-static && npm install",
+    "serve": "npm-run-all --parallel serve:*",
+    "serve:main": "cd cloud-main-static && npm run serve",
+    "serve:storge": "cd cloud-storge-static && npm run serve",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "cd cloud-main-static && npm run build",
+    "build:storge": "cd cloud-storge-static && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

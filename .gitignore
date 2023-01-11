@@ -1,0 +1,30 @@
+.DS_Store
+node_modules
+/main/node_modules
+/storage/node_modules
+/tree/node_modules
+/main/dist
+/storage/dist
+/tree/dist
+/dist
+/main备份
+
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
